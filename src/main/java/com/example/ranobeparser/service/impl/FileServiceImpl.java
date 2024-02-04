@@ -28,7 +28,8 @@ public class FileServiceImpl implements FileService {
     private static final int IMAGE_ID_INDEX = 1;
 
     private ImageService imageService;
-    private final DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+    private final DocumentBuilderFactory documentBuilderFactory =
+            DocumentBuilderFactory.newInstance();
     private final DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
     private final TransformerFactory transformerFactory = TransformerFactory.newInstance();
     private final Transformer transformer = transformerFactory.newTransformer();
